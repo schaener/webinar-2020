@@ -4,6 +4,9 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,6 +23,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import id.javafirst.webinarbisaai.Home.Adapter.NationAdapter;
+import id.javafirst.webinarbisaai.Home.Model.NationModel;
 import id.javafirst.webinarbisaai.Login.LoginActivity;
 import id.javafirst.webinarbisaai.R;
 
@@ -32,6 +40,9 @@ public class HomeActivity extends AppCompatActivity {
   AppCompatSpinner chooseColor;
     SharedPreferences shared;
     CardView logoutButton;
+    RecyclerView nation;
+    NationAdapter madapter;
+    List<NationModel> listNationM = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +54,7 @@ public class HomeActivity extends AppCompatActivity {
         txtTotal = findViewById(R.id.txtTotal);
         shared = getApplication().getSharedPreferences("spWebinar", MODE_PRIVATE);
         logoutButton = findViewById(R.id.cvLogout);
+        nation = findViewById(R.id.rvNation);
         // inisialiasi Array Adapter dengan memasukkan string array di atas
         final ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.arrayTxtColor));
@@ -125,5 +137,30 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(newIntent);
             }
         });
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        nation.setLayoutManager(llm);
+        madapter = new NationAdapter(listNationM,this);
+        nation.setItemAnimator(new DefaultItemAnimator());
+        nation.setAdapter(madapter);
+        NationModel nationModel = new NationModel(getString(R.string.idnTxt),R.drawable.indonesia
+                );
+       listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.mlyTxt),R.drawable.malaysia);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.sgTxt),R.drawable.singapore);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.kmjTxt),R.drawable.kamboja);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.lsTxt),R.drawable.laos);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.phTxt),R.drawable.philipines);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.vtTxt),R.drawable.vietnam);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.thaiTxt),R.drawable.thailand);
+        listNationM.add(nationModel);
+        nationModel = new NationModel(getString(R.string.brnTxt),R.drawable.brunei);
+        listNationM.add(nationModel);
+        madapter.notifyDataSetChanged();
     }
 }

@@ -181,6 +181,13 @@
             </ScrollView>
 
         </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNation"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
         <androidx.cardview.widget.CardView
             android:id="@+id/cvLogout"
             android:layout_marginTop="10dp"
@@ -195,6 +202,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </androidx.cardview.widget.CardView>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 </RelativeLayout>

@@ -18,6 +18,16 @@
     <string name="engTxt">Eng</string>
     <string name="webinar_androidTxt">WEBINAR ANDROID</string>
     <string name="logoutTxt">LOGOUT</string>
+    <string name="nationTxt">Indonesia</string>
+    <string name="idnTxt">Indonesia</string>
+    <string name="mlyTxt">Malaysia</string>
+    <string name="sgTxt">Singapura</string>
+    <string name="kmjTxt">Kamboja</string>
+    <string name="lsTxt">Laos</string>
+    <string name="phTxt">Philipina</string>
+    <string name="brnTxt">Brunei Darussalam</string>
+    <string name="vtTxt">Vietnam</string>
+    <string name="thaiTxt">Thailand</string>
     <string-array name="arrayTxtColor">
         <item>Black</item>
         <item>Red</item>
