@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">WebinarBisaAI</string>
+    <string name="usernameTxtError">Isikan Username Terlebih Dahulu !</string>
+    <string name="passwordTxtError">Isikan Password Terlebih Dahulu !</string>
+    <string name="welcomeTxt">\Halo, Selamat Datang \</string>
+    <string name="txtIdn">Android adalah sistem operasi dengan sumber terbuka, dan Google merilis kodenya di bawah Lisensi Apache.[9] Kode dengan sumber terbuka dan lisensi perizinan pada Android memungkinkan perangkat lunak untuk dimodifikasi secara bebas dan didistribusikan oleh para pembuat perangkat, operator nirkabel, dan pengembang aplikasi. Selain itu, Android memiliki sejumlah besar komunitas pengembang aplikasi (apps) yang memperluas fungsionalitas perangkat, umumnya ditulis dalam versi kustomisasi bahasa pemrograman Java.[14] Pada bulan Oktober 2013, ada lebih dari satu juta aplikasi yang tersedia untuk Android, dan sekitar 50 miliar aplikasi telah diunduh dari Google Play, toko aplikasi utama Android.[15][16] Sebuah survei pada bulan April-Mei 2013 menemukan bahwa Android adalah platform paling populer bagi para pengembang, digunakan oleh 71% pengembang aplikasi bergerak.[17] Di Google I/O 2014, Google melaporkan terdapat lebih dari satu miliar pengguna aktif bulanan Android, meningkat dari 583 juta pada bulan Juni 2013.</string>
+    <string name="txtEng">Android is an open source operating system, and Google released the code under the Apache License. [9] Code with open source and licensing licenses on Android allows software to be modified freely and distributed by device makers, wireless operators, and application developers. In addition, Android has a large number of community application developers (apps) that expand the functionality of the device, generally written in a customized version of the Java programming language. [14] In October 2013, there were more than one million applications available for Android, and around 50 billion applications have been downloaded from Google Play, Android/s main application store. [15] [16] A survey in April-May 2013 found that Android is the most popular platform for developers, used by 71% of mobile application developers. [17] On Google I / O 2014, Google reported that there were more than one billion monthly active users of Android, up from 583 million in June 2013.</string>
+    <string name="lineTotal">\"Total Baris = \"</string>
+    <string name="loginTxt">LOGIN</string>
+    <string name="usernameTxt">Username</string>
+    <string name="passwordTxt">Password</string>
+    <string name="berandaTxt">BERANDA</string>
+    <string name="jumlah_baris_teksTxt">Jumlah Baris Teks</string>
+    <string name="klik_disiniTxt">Klik disini !</string>
+    <string name="warna_teksTxt">Warna Teks</string>
+    <string name="pilih_bahasaTxt">Pilih Bahasa</string>
+    <string name="indTxt">Ind</string>
+    <string name="engTxt">Eng</string>
+    <string name="webinar_androidTxt">WEBINAR ANDROID</string>
+    <string name="logoutTxt">LOGOUT</string>
+    <string-array name="arrayTxtColor">
+        <item>Black</item>
+        <item>Red</item>
+        <item>Orange</item>
+    </string-array>
+</resources>

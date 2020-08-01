@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Home.HomeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:text="@string/berandaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_below="@id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:padding="10dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/cvBox1"
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:text="@string/jumlah_baris_teksTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/txtToast"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:text="@string/klik_disiniTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:text="@string/warna_teksTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                       <androidx.appcompat.widget.AppCompatSpinner
+
+                           android:id="@+id/spColor"
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/white"
+                            android:text="@string/pilih_bahasaTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                       <RadioGroup
+                           android:id="@+id/rgLanguage"
+                           android:layout_weight="1"
+                           android:orientation="horizontal"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+                           <androidx.appcompat.widget.AppCompatRadioButton
+                               android:id="@+id/rbInd"
+                               android:layout_weight="1"
+                               android:gravity="center"
+                               android:text="@string/indTxt"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+                           <androidx.appcompat.widget.AppCompatRadioButton
+                               android:id="@+id/rbEng"
+                               android:layout_weight="1"
+                               android:text="@string/engTxt"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+                       </RadioGroup>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+             android:layout_weight="1"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtLabel"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="@string/webinar_androidTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:padding="15dp"
+                        android:id="@+id/txtLanguage"
+                        android:textColor="@color/white"
+                        android:justificationMode="inter_word"
+                        android:layout_below="@id/txtLabel"
+                        android:text="@string/txtIdn"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:targetApi="o" />
+                    <TextView
+
+                        android:padding="15dp"
+                        android:id="@+id/txtTotal"
+                        android:textColor="@color/white"
+                        android:justificationMode="inter_word"
+                        android:layout_below="@id/txtLanguage"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:targetApi="o" />
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLogout"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="11dp"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/logoutTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</RelativeLayout>
