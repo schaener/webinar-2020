@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">WebinarBisaAI</string>
+    <string name="tutorial_android_java">Tutorial Android JAVA</string>
+    <string name="login">Login</string>
+    <string name="masukkan_password_anda">Masukkan password anda</string>
+    <string name="masukkan_username_anda">Masukkan username anda</string>
+    <string name="usernameTxtError">Isikan username anda terlebih dahulu</string>
+    <string name="passwordTxtError">Isikan password anda terlebih dahulu</string>
+    <string name="welcomeTxt">Halo, Selamat Datang </string>
+    <string name="pilihBahasa">Pilih Bahasa</string>
+    <string name="indTxt">Indonesia</string>
+    <string name="engTxt">English</string>
+    <string name="ubah_warna_teks">Ubah Warna Teks</string>
+    <string name="txtIdn">Android adalah sistem operasi dengan sumber terbuka, dan Google merilis kodenya di bawah Lisensi Apache.
+        Kode dengan sumber terbuka dan lisensi perizinan pada Android memungkinkan perangkat lunak untuk dimodifikasi secara bebas dan didistribusikan oleh para pembuat perangkat,
+        operator nirkabel, dan pengembang aplikasi.
+        Selain itu, Android memiliki sejumlah besar komunitas pengembang aplikasi (apps) yang memperluas fungsionalitas perangkat,
+        umumnya ditulis dalam versi kustomisasi bahasa pemrograman Java.
+        Pada bulan Oktober 2013, ada lebih dari satu juta aplikasi yang tersedia untuk Android,
+        dan sekitar 50 miliar aplikasi telah diunduh dari Google Play, toko aplikasi utama Android.
+        Sebuah survei pada bulan April-Mei 2013 menemukan bahwa Android adalah platform paling populer bagi para pengembang, digunakan oleh 71% pengembang aplikasi bergerak.
+        Di Google I/O 2014, Google melaporkan terdapat lebih dari satu miliar pengguna aktif bulanan Android, meningkat dari 583 juta pada bulan Juni 2013.</string>
+
+    <string name="txtEng">Android is an open source operating system, and Google released the code under the Apache License.
+        Code with open source and licensing licenses on Android allows software to be modified freely and distributed by device makers, wireless operators, and application developers.
+        In addition, Android has a large number of community application developers (apps) that expand the functionality of the device, generally written in a customized version of the Java programming language.
+        In October 2013, there were more than one million applications available for Android, and around 50 billion applications have been downloaded from Google Play, Android/s main application store.
+        A survey in April-May 2013 found that Android is the most popular platform for developers, used by 71% of mobile application developers.
+        On Google I / O 2014, Google reported that there were more than one billion monthly active users of Android, up from 583 million in June 2013.</string>
+
+    <string name="RecyclerView">Recycler View</string>
+    <string name="splashscreen">SplashScreen</string>
+    <string name="DashBoard">Dashboard</string>
+    <string name="klik_disini">Klik Disini</string>
+
+    <string name="lineTotal">\"Total Baris = \"</string>
+    <string name="jumlah_baris_teksTxt">Jumlah Baris Teks</string>
+    <string name="klik_disiniTxt">Klik disini !</string>
+
+    <string name="logoutTxt">LOGOUT</string>
+    <string name="nationTxt">Indonesia</string>
+    <string name="idnTxt">Indonesia</string>
+    <string name="mlyTxt">Malaysia</string>
+    <string name="sgTxt">Singapura</string>
+    <string name="kmjTxt">Kamboja</string>
+    <string name="lsTxt">Laos</string>
+    <string name="phTxt">Philipina</string>
+    <string name="brnTxt">Brunei Darussalam</string>
+    <string name="vtTxt">Vietnam</string>
+    <string name="thaiTxt">Thailand</string>
+
+    <string-array name="arrayTxtColor">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Green</item>
+    </string-array>
+</resources>
