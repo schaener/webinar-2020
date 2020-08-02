@@ -28,7 +28,6 @@
         A survey in April-May 2013 found that Android is the most popular platform for developers, used by 71% of mobile application developers.
         On Google I / O 2014, Google reported that there were more than one billion monthly active users of Android, up from 583 million in June 2013.</string>
 
-    <string name="RecyclerView">Recycler View</string>
     <string name="splashscreen">SplashScreen</string>
     <string name="DashBoard">Dashboard</string>
     <string name="klik_disini">Klik Disini</string>
@@ -36,18 +35,7 @@
     <string name="lineTotal">\"Total Baris = \"</string>
     <string name="jumlah_baris_teksTxt">Jumlah Baris Teks</string>
     <string name="klik_disiniTxt">Klik disini !</string>
-
-    <string name="logoutTxt">LOGOUT</string>
-    <string name="nationTxt">Indonesia</string>
-    <string name="idnTxt">Indonesia</string>
-    <string name="mlyTxt">Malaysia</string>
-    <string name="sgTxt">Singapura</string>
-    <string name="kmjTxt">Kamboja</string>
-    <string name="lsTxt">Laos</string>
-    <string name="phTxt">Philipina</string>
-    <string name="brnTxt">Brunei Darussalam</string>
-    <string name="vtTxt">Vietnam</string>
-    <string name="thaiTxt">Thailand</string>
+    <string name="RecyclerView">Recycler View</string>
 
     <string-array name="arrayTxtColor">
         <item>Blue</item>

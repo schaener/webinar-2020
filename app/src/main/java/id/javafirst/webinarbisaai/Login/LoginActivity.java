@@ -12,19 +12,17 @@ import android.widget.Toast;
 
 import id.javafirst.webinarbisaai.Main.MainActivity;
 import id.javafirst.webinarbisaai.R;
-import id.javafirst.webinarbisaai.Utils.SharedPrefManager;
+
 
 public class LoginActivity extends AppCompatActivity {
     AppCompatEditText username, password;
     CardView loginButton;
-    SharedPrefManager sharedPrefManager;
-    SharedPreferences shared;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        sharedPrefManager = new SharedPrefManager(this);
-        shared = getSharedPreferences("spWebinar", MODE_PRIVATE);
+
         username = findViewById(R.id.edtUsername);
         password = findViewById(R.id.edtPassword);
         loginButton = findViewById(R.id.cvLogin);
@@ -34,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //auth
                 if (username.getText().toString().isEmpty()){
                     username.setError(getString(R.string.usernameTxtError));
                 }
@@ -42,8 +39,6 @@ public class LoginActivity extends AppCompatActivity {
                     password.setError(getString(R.string.passwordTxtError));
                 }
                 else {
-                    sharedPrefManager.saveSPString(SharedPrefManager.SP_USERNAME,
-                            username.getText().toString());
                     Toast.makeText(getApplicationContext(),getString(R.string.welcomeTxt)+
                             username.getText().toString(),Toast.LENGTH_SHORT).show();
                     Intent moveAct = new Intent(getApplicationContext(), MainActivity.class);

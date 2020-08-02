@@ -12,7 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.codesgood.views.JustifiedTextView;
 
@@ -21,16 +20,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.cardview.widget.CardView;
 import id.javafirst.webinarbisaai.R;
-import id.javafirst.webinarbisaai.RV.RecyclerActivity;
-
-import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
+import id.javafirst.webinarbisaai.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
     RadioGroup chooseLanguage;
     JustifiedTextView txtLng;
     TextView  txtToast, txtTotal;
     AppCompatSpinner chooseColor;
-    SharedPreferences shared;
     CardView rvButton;
 
     @Override
@@ -55,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
         txtToast = findViewById(R.id.txtToast);
 //        txtTotal = findViewById(R.id.txtTotal);
-        shared = getApplication().getSharedPreferences("spWebinar", MODE_PRIVATE);
 
         chooseLanguage.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @SuppressLint("WrongConstant")
