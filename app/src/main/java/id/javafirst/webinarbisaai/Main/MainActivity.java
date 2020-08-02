@@ -5,11 +5,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.codesgood.views.JustifiedTextView;
 
@@ -51,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         chooseColor.setAdapter(adapter);
 
         txtToast = findViewById(R.id.txtToast);
-        txtTotal = findViewById(R.id.txtTotal);
+//        txtTotal = findViewById(R.id.txtTotal);
         shared = getApplication().getSharedPreferences("spWebinar", MODE_PRIVATE);
 
         chooseLanguage.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -100,11 +103,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int i;
-                txtTotal.setText("");
+//                txtTotal.setText("");
                 for (i = 1; i <= txtLng.getLineCount(); i++) {//value increased by 2
-                    txtTotal.append("\n" + i);
+                    Log.d("\b"+"Baris Ke- ",String.valueOf(i));
+//                    txtTotal.append("\n" + i);
                 }
-                txtTotal.append("\n" + getString(R.string.lineTotal) + (i - 1));
+//                txtTotal.append("\n" + getString(R.string.lineTotal) + (i - 1));
+                Toast.makeText(getApplicationContext(),"Jumlah Baris dari Teks Tersebut Adalah "+(i - 1),
+                        Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -184,17 +184,17 @@
                             android:text="@string/klik_disini"
                             android:textColor="@color/colorWhite" />
 
-                        <TextView
-                            android:id="@+id/txtTotal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_below="@id/txtToast"
-                            android:background="@color/colorWhite"
-                            android:gravity="center"
-                            android:justificationMode="inter_word"
-                            android:padding="15dp"
-                            android:textColor="@color/colorPrimary"
-                            tools:targetApi="o" />
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtTotal"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_below="@id/txtToast"-->
+<!--                            android:background="@color/colorWhite"-->
+<!--                            android:gravity="center"-->
+<!--                            android:justificationMode="inter_word"-->
+<!--                            android:padding="15dp"-->
+<!--                            android:textColor="@color/colorPrimary"-->
+<!--                            tools:targetApi="o" />-->
 
                     </RelativeLayout>
 
