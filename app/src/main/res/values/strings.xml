@@ -8,8 +8,8 @@
     <string name="passwordTxtError">Isikan password anda terlebih dahulu</string>
     <string name="welcomeTxt">Halo, Selamat Datang </string>
     <string name="pilihBahasa">Pilih Bahasa</string>
-    <string name="indTxt">Indonesia</string>
-    <string name="engTxt">English</string>
+    <string name="indTxt">IND</string>
+    <string name="engTxt">ENG</string>
     <string name="ubah_warna_teks">Ubah Warna Teks</string>
     <string name="txtIdn">Android adalah sistem operasi dengan sumber terbuka, dan Google merilis kodenya di bawah Lisensi Apache.
         Kode dengan sumber terbuka dan lisensi perizinan pada Android memungkinkan perangkat lunak untuk dimodifikasi secara bebas dan didistribusikan oleh para pembuat perangkat,

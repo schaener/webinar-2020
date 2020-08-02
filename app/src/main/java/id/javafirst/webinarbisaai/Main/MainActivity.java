@@ -1,5 +1,6 @@
 package id.javafirst.webinarbisaai.Main;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -10,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.codesgood.views.JustifiedTextView;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSpinner;
@@ -17,9 +20,12 @@ import androidx.cardview.widget.CardView;
 import id.javafirst.webinarbisaai.R;
 import id.javafirst.webinarbisaai.RV.RecyclerActivity;
 
+import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
+
 public class MainActivity extends AppCompatActivity {
     RadioGroup chooseLanguage;
-    TextView txtLng, txtToast, txtTotal;
+    JustifiedTextView txtLng;
+    TextView  txtToast, txtTotal;
     AppCompatSpinner chooseColor;
     SharedPreferences shared;
     CardView rvButton;
@@ -49,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         shared = getApplication().getSharedPreferences("spWebinar", MODE_PRIVATE);
 
         chooseLanguage.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @SuppressLint("WrongConstant")
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -94,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int i;
                 txtTotal.setText("");
-                for (i = 1; i <= txtLng.getTextSize(); i++) {//value increased by 2
+                for (i = 1; i <= txtLng.getLineCount(); i++) {//value increased by 2
                     txtTotal.append("\n" + i);
                 }
                 txtTotal.append("\n" + getString(R.string.lineTotal) + (i - 1));

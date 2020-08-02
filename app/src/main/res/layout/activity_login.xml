@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
     tools:context=".Login.LoginActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -56,6 +57,7 @@
             <!--                android:textStyle="bold" />-->
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:textColorHint="@color/colorGray"
                 android:id="@+id/edtUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,6 +67,7 @@
                 android:textColor="@color/colorBlack" />
 
             <androidx.appcompat.widget.AppCompatEditText
+                android:textColorHint="@color/colorGray"
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
